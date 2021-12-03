@@ -10,7 +10,7 @@ const UseGetNews = url => {
     try {
       const {data: articles} = await Axios.get(url);
 
-      setData(articles['articles']);
+      setData(articles['results']);
       setLoading(false);
     } catch (err) {
       setError(err.message);
